@@ -4,18 +4,6 @@ This is a simple real-time chat application using **Socket.io**, **ReactJS**, an
 
 ---
 
-## :bookmark_tabs: **Table of Contents**
-
-- [Introduction](#introduction)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [How to Use](#how-to-use)
-- [Directory Structure](#directory-structure)
-- [Features](#features)
-- [Contributing](#contributing)
-- [License](#license)
-
----
 
 ## :globe_with_meridians: **Introduction**
 
@@ -33,10 +21,16 @@ This application allows multiple users to chat in real-time across different bro
   - [Node.js](https://nodejs.org/)
   - [Express.js](https://expressjs.com/)
   - [Socket.io Server](https://socket.io/docs/v4/server-api/)
+  - [Cookie Parser](https://www.npmjs.com/package/cookie-parser)
+  - [cors](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+  - [jsonWebToken](https://jwt.io/)
 
 - **Others:**
   - NPM for package management
-  - HTML, CSS (with styled-components for styling)
+  - HTML, CSS, Tailwind (with styled-components for styling)
+  - react-router-dom (for routing)
+  - react-icons(for add icons)
+  - react-chat-elements(for better ui like chat)
 
 ---
 
@@ -102,7 +96,7 @@ npm start
    The application supports **real-time communication**, so messages sent by one user will be immediately visible to the other user.
 
 5. **Cross-Browser Communication:**  
-   To test real-time messaging, open the app in two different browsers (or tabs). You can then chat back and forth, and the messages will be synchronized across both.
+   To test real-time messaging, open the app in two different browsers . You can then chat back and forth, and the messages will be synchronized across both.
 
 ---
 
@@ -117,8 +111,7 @@ chat-app/
 │   │   ├── index.js           # React entry point
 │   └── public/                
 ├── server/                    # Node.js backend
-│   ├── index.js               # Main server file
-│   ├── socket.js              # Socket.io logic
+│   ├── app.js               # Main server file
 │   └── package.json           # Backend dependencies
 ├── .gitignore                 # Git ignore file
 ├── README.md                  # Project documentation
@@ -144,24 +137,8 @@ chat-app/
 - **Message History:**  
   Messages between users are visible within the session, but the app does not yet save messages to a database for persistence.
 
----
-
-## :handshake: **Contributing**
-
-Contributions are welcome! If you would like to help improve this chat application, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-name`).
-3. Make your changes.
-4. Commit your changes (`git commit -am 'Add new feature'`).
-5. Push to your branch (`git push origin feature-name`).
-6. Open a Pull Request.
-
----
-
-## :memo: **License**
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+- **Pending Messages:**  
+  User can see how many messages are pending from particular user.
 
 ---
 
@@ -171,14 +148,3 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - [ReactJS](https://reactjs.org/) for building the frontend.
 - [Node.js](https://nodejs.org/) and [Express](https://expressjs.com/) for the backend.
 ```
-
----
-
-### Features of this Readme:
-
-1. **Icons & Emojis**: I’ve added icons/emojis (like :rocket:, :globe_with_meridians:, :memo:) to make the sections visually appealing.
-2. **Headers & Subheaders**: Various headers (`#`, `##`, `###`) are used to structure the content for easier navigation.
-3. **Bold Text**: Important terms like `Socket.io`, `ReactJS`, etc., are highlighted in **bold** for emphasis.
-4. **Code Blocks**: Code snippets (e.g., installation commands) are displayed in fenced code blocks for clarity.
-
-You can copy-paste this into your `README.md` file, and the formatting will show up nicely with appropriate styling when viewed on GitHub or other markdown viewers.
