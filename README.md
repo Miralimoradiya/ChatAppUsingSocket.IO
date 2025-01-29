@@ -1,6 +1,5 @@
 Here's an enhanced version of the `README.md` with some Markdown formatting to make it more visually appealing, including headers, lists, bold/italic text, and code blocks for better readability:
 
-```markdown
 # Chat Application with **Socket.io**, **ReactJS**, **Node.js**
 
 This is a simple real-time chat application using **Socket.io**, **ReactJS**, and **Node.js**. The app allows users to log in, create a profile, and communicate with each other in real-time, much like WhatsApp. The app works across different browsers, allowing two or more users to chat instantly.
@@ -50,7 +49,7 @@ First, clone the repository to your local machine.
 
 ```bash
 git clone https://github.com/yourusername/chat-app.git
-```
+
 
 ### Step 2: Install Backend Dependencies
 
